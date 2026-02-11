@@ -1,0 +1,55 @@
+.projet__carte {
+    position: relative;
+    width: $num-7;
+    height: $num-4 - 5;
+    transform: skewY(12deg);
+    margin-left: $num-10;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+    bottom: 0;
+
+    .carte__mask {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        object-fit: fill;
+    }
+
+    .carte__img {
+        position: absolute;
+        inset: 5px;
+        object-fit: cover;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        border-radius: 12px;
+        z-index: 2;
+    }
+
+    .carte__titre {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        background-color: $blue;
+        border-top-left-radius: $num-8;
+        border-top-right-radius: $num-8;
+        visibility: hidden;
+        transition: bottom 0.3s ease;
+
+        .titre__projet {
+            text-align: center;
+            color: $white;
+            font-family: $font-outfit;
+        }
+    }
+
+    &:hover {
+        bottom: $num-3;
+
+        .carte__titre {
+            visibility: visible;
+        }
+    }
+}

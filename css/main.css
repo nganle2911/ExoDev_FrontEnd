@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2E8D4;
+}
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.titre {
+  font-size: 48px;
+  color: #212850;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  width: 702px;
+  line-height: 114.99%;
+  margin: 0 auto;
+  font-family: "Anton", sans-serif;
+}
+
+.projet__carte {
+  position: relative;
+  width: 130px;
+  height: 190px;
+  transform: skewY(12deg);
+  margin-left: -25px;
+  cursor: pointer;
+  transition: bottom 0.3s ease;
+  bottom: 0;
+}
+.projet__carte .carte__mask {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  object-fit: fill;
+}
+.projet__carte .carte__img {
+  position: absolute;
+  inset: 5px;
+  object-fit: cover;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 12px;
+  z-index: 2;
+}
+.projet__carte .carte__titre {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background-color: #4197C8;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  visibility: hidden;
+  transition: bottom 0.3s ease;
+}
+.projet__carte .carte__titre .titre__projet {
+  text-align: center;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+.projet__carte:hover {
+  bottom: 50px;
+}
+.projet__carte:hover .carte__titre {
+  visibility: visible;
+}
+
+.accueil {
+  height: 100vh;
+  padding: 100px 0;
+}
+.accueil .container .accueil__titre {
+  position: relative;
+}
+.accueil .container .accueil__titre .accueil__icone {
+  position: absolute;
+}
+.accueil .container .accueil__titre .accueil__icone.ellipse {
+  top: 0%;
+  left: 23%;
+}
+.accueil .container .accueil__titre .accueil__icone.ampoule {
+  top: -95%;
+  left: 72%;
+  width: 196.08px;
+  height: 224.37px;
+}
+.accueil .container .accueil__projets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+.accueil .container .accueil__titreDynamiqueProjet {
+  text-align: center;
+  padding: 50px 0;
+}
+.accueil .container .accueil__titreDynamiqueProjet .titreDynamique {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 2%;
+}
+.accueil .container .accueil__titreDynamiqueProjet .titreDynamique__ligne {
+  width: 376px;
+}

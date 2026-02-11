@@ -1,0 +1,21 @@
+// Fichier main.scss importe tous les fichiers scss du projet 
+// L'ordre d'importation est important 
+
+// Helpers 
+@import "./Helpers/variables";
+
+// Vendors 
+
+// Base
+@import "./Base/reset";
+
+// Components
+@import "./Components/title";
+@import "./Components/card";
+
+// Layouts 
+@import "./Layouts/accueil";
+
+// Pages
+
+// Theme 

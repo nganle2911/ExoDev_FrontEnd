@@ -1,0 +1,15 @@
+// Fichier _reset.scsscontient tous les styles générales du site web
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $beige;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}

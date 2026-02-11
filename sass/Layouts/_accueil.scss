@@ -1,0 +1,52 @@
+// Fichier _accueil.scss contient tous les styles de la section d'accueil 
+.accueil {
+    height: 100vh;
+    padding: $num-6 0;
+
+    .container {
+        .accueil__titre {
+            position: relative;
+
+            .accueil__icone {
+                position: absolute;
+            }
+
+            .accueil__icone.ellipse {
+                top: 0%;
+                left: 23%;
+            }
+
+            .accueil__icone.ampoule {
+                top: -95%;
+                left: 72%;
+                width: $num-4 + 1.08;
+                height: $num-5 + 4.37;
+            }
+        }
+
+        .accueil__projets {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: $num-6 0;
+        }
+
+        .accueil__titreDynamiqueProjet {
+            text-align: center;
+            padding: $num-3 0;
+
+            .titreDynamique {
+                font-family: $font-outfit;
+                font-size: $num-12 + 4;
+                font-weight: $fw-2;
+                line-height: 125%;
+                letter-spacing: 2%;
+            }
+
+            .titreDynamique__ligne {
+                width: $num-11 + 1;
+            }
+        }
+    }
+}
+
