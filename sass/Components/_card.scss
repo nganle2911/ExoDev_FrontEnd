@@ -20,11 +20,11 @@
 
     .carte__img {
         position: absolute;
-        inset: 5px;
+        inset: $num-13;
         object-fit: cover;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        border-radius: 12px;
+        width: calc(100% - $num-9);
+        height: calc(100% - $num-9);
+        border-radius: $num-9 + 2;
         z-index: 2;
     }
 
