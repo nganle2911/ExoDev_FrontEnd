@@ -1,10 +1,13 @@
-## How to run this project locally 
+# How to run this project locally 
 
-### Option 1 : 
+## Option1 
+
 - Open the project with VS Code
-- Run "Live Server" on index.html 
+- Run "Live Server" on `index.html`  
 
-### Option 2 :
+## Option2 
+
 Run these commands : 
-- npm install 
-- npm run sass 
+```bash
+npm install 
+npm run sass 
